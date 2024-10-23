@@ -153,7 +153,7 @@ Target Tables:
 
     @lazy_method
     def get_column_lineage(
-        self, exclude_path_ending_in_subquery=True, exclude_subquery_columns=False
+        self, exclude_path_ending_in_subquery=True, exclude_subquery_columns=True
     ) -> List[Tuple[Column, Column]]:
         """
         a list of column tuple :class:`sqllineage.models.Column`
